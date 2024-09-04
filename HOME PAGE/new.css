@@ -1,0 +1,1303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E8ECFF;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    max-width: 90%;
+    margin: 15px auto;
+    height: 70px;
+    position: relative;
+}
+
+header .logo {
+    margin-right: 20px; 
+}
+
+header .logo img {
+    height: 50px;
+    width: auto;
+    border-radius: 15px;
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-weight: bold;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+header nav a:hover {
+    color: #2a2e77;
+    transform: scale(1.1);
+}
+
+header .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-left: auto; 
+}
+
+header .auth-buttons a.auth-btn {
+    padding: 5px 10px;
+    background-color: #2a2e77;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 65px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 30px;
+    flex: none;
+    margin: 0;
+}
+
+header .auth-buttons a.login-btn {
+    border-radius: 12px 0 0 12px;
+}
+
+header .auth-buttons a.signup-btn {
+    border-radius: 0 12px 12px 0;
+}
+
+header .auth-buttons a.auth-btn:hover {
+    background-color: #1e225a;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+.hamburger div {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+}
+
+header nav.open a {
+    margin: 2px 0;
+    padding: 5px 0;
+    width: 70%;
+    text-align: center;
+    background-color: #2A2E77;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    animation: slideDownFadeIn 0.8s ease forwards;
+    opacity: 1; 
+}
+
+header nav.open a:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+header nav.open a:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+header nav.open a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+header nav.open a:nth-child(4) {
+    animation-delay: 0.5s;
+}
+
+header nav.open a:hover {
+    background-color: #1e225a;
+    transform: scale(1.05);
+}
+
+header nav.open .auth-buttons .auth-btn {
+    margin: 5px 0;
+    padding: 8px 0;
+    width: 70%;
+    text-align: center;
+    background-color: #2a2e77;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    animation: slideDownFadeIn 0.8s ease forwards;
+    opacity: 0; 
+}
+
+header nav.open .auth-buttons .auth-btn:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+header nav.open .auth-buttons .auth-btn:nth-child(2) {
+    animation-delay: 0.7s;
+}
+
+header nav.open .auth-buttons .auth-btn:hover {
+    background-color: #1e225a;
+    transform: scale(1.05);
+}
+
+
+
+/* Hero CSS */
+
+.hero {
+    background-color: #30314D;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    width: 90%; 
+    height:40vh;
+}
+.xero{
+    color: white;
+    font-size: 10vh;
+    margin-left: 5%;
+    margin-top: 2vh;
+}
+.program{
+    color: white;
+    font-size: 6vh;
+    margin-left: 21%;
+    margin-top: -17vh;
+}
+.model {
+    margin-top: -27.5vh;
+    height: 50vh;
+    margin-left: 50%;
+    width: 85vh;
+}
+
+/* Hero 2 CSS */
+
+.hero2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    width: 90%; 
+    height:30vh;
+}
+.whyxero {
+    margin-left: 70px;
+    margin-top: 5px;
+    font-family: "Poppins", sans-serif;
+}
+.points {
+    margin-left: 80vh;
+    font-family: "kumbh sans", sans-serif;
+    font-size: 2.5vh;
+}
+/* Courses section Designing  Starts here */
+
+.courses{
+    background: local;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    width: 90%; 
+    height:100vh;
+    padding-bottom: 10vh;
+}
+
+.key-head{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+/* cards addition will start here */
+
+.card {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: first baseline;
+    margin-left: 5%;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card .thumbnail {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card .card-title {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card .card-description {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn button:hover {
+    background-color: #372fbd;
+}
+
+
+.card2 {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -67vh;
+    margin-bottom: 50vh;
+    margin-left: 38%;
+    margin-right: 350px;
+}
+
+
+.card2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card2 .thumbnail2 {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card2 .card-title2 {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card2 .card-description2 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn2 {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn2 button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn2 button:hover {
+    background-color: #372fbd;
+}
+
+.card3 {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -113vh;
+    margin-bottom: 40px;
+    margin-left: 71%;
+    margin-right: 350px;
+}
+
+
+.card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card3 .thumbnail3 {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card3 .card-title3 {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card3 .card-description3 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn3 {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn3 button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn3 button:hover {
+    background-color: #372fbd;
+}
+
+.card4 {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -0;
+    margin-bottom: 10vh;
+    margin-left: 5%;
+    margin-right: 350px;
+}
+
+
+.card4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card4 .thumbnail4 {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card4 .card-title4 {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card4 .card-description4 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn4 {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn4 button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn4 button:hover {
+    background-color: #372fbd;
+}
+
+.card5 {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -73vh;
+    margin-bottom: 50vh;
+    margin-left: 38%;
+    margin-right: 350px;
+}
+
+
+.card5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card5 .thumbnail5 {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card5 .card-title5 {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card5 .card-description5 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn5 {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn5 button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn5 button:hover {
+    background-color: #372fbd;
+}
+
+.card6 {
+    margin: 30px;
+    margin-top: 70px;
+    height: 470px;
+    width: 350px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: -113vh;
+    margin-bottom: 2vh;
+    margin-left: 71%;
+    margin-right: 350px;
+}
+
+
+.card6:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card6 .thumbnail6 {
+    background-color: gray;
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+.card6 .card-title6 {
+    margin-top: 20px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.card6 .card-description6 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: inherit;
+    padding-right: 10px;
+}
+
+.enroll-btn6 {
+    display: flex;
+    justify-content: center;
+}
+
+.enroll-btn6 button {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #433FD8;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.enroll-btn6 button:hover {
+    background-color: #372fbd;
+}
+
+
+/* Trans Skill Journey */
+.journey {
+    background-color: #D7DDF9;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    width: 90%; 
+    height: 50vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.tsj {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: black;
+}
+
+/* Mind Map Section */
+.mind-map-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #dfe8ff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Titles Styling */
+.mind-map-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+.mind-map-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 30px;
+}
+
+/* Carousel Container Styling */
+.carousel-container {
+    background-color: rgba(173, 216, 230, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+/* Carousel Wrapper */
+.carousel {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+/* Card Styling */
+.cards {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    min-width: 200px;
+    height: 150px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+    font-size: 1.2em;
+    flex-shrink: 0;
+    transition: transform 0.9s ease-in-out;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: scale(0.55);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mind-map-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .mind-map-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-container {
+        padding: 15px;
+    }
+
+    .card {
+        min-width: 150px;
+        height: 120px;
+    }
+}
+
+
+.Certificateh{
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+.Certificatep{
+    text-align: center;
+    color: black;
+    font-size: 3vh;
+    margin-top: -2vh;
+    font-family: "kumbh sans", sans-serif;
+
+}
+
+/* Certification Section */
+.certification {
+    background-color: #FFFCFC;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 50px auto;
+    width: 90%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: -1.5vh;
+}
+
+.certification-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certification-text {
+    color: #0B0B0B;
+    max-width: 66%;
+    margin-left: 8vh;
+}
+
+.certification-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.certification-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-text ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.certificate-border {
+
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.certificate-border img {
+    max-width: 100%;
+    height: auto;
+    max-height: 270px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: contain; 
+}
+
+.certificate-border p {
+    font-size: 20px;
+    color: #4d5baf;
+    font-weight: bold;
+}
+
+
+
+.xero-community {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.xero-community .community-content {
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 3%;
+    justify-content: flex-start;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    height: 70VH;
+}
+
+.xero-community .community-content img {
+    margin-right: 30px; 
+    max-width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: 17px;
+    margin-left: 15vh;
+}
+
+.xero-community .community-content h2 {
+    font-size: 46px; 
+    margin-bottom: 10px;
+    margin-left: 20vh;
+    margin-top: -3vh;
+}
+
+.xero-community .community-content p {
+    flex: 1;
+    margin: 0;
+    text-align: center; 
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    font-size: 20px; 
+    margin-left: 20vh;
+}
+
+.xero-community .join-now {
+    padding: 10px 20px; 
+    background-color: #2a2e77;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0 10px 10px;
+    font-size: 16px; 
+    margin-left: 20vh;
+}
+
+.xero-community .community-text-button {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    align-items: center; 
+}
+
+
+
+.faqs {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    margin-top: 5vh;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    border-radius:15px ;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 10px auto; 
+    margin-bottom: 3vh;
+
+  }
+  .qs{
+    margin-left: 22px;
+    color: rgb(0, 0, 0);
+    height: 65px;
+    cursor: pointer;
+    width: 70%;
+  
+  }
+  .qs button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 80%;
+    margin-top: -7vh;
+    color: rgb(0, 0, 0);
+    
+  }
+  .hide{
+    display: none;
+  }
+  .ans{
+    background-color: #fff;
+    margin-top: -22px;
+    border-radius: 15px;
+  }
+  .ans p{
+    margin-left: 12px;
+    padding: 11px;
+    display: none;
+    font-size: 16px;
+  }
+  .active p{
+    display: block;
+  
+  }
+
+
+/* Footer CSS */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-top: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 0px auto; 
+    width: 90%; 
+    border: 1.1px solid #000000;
+    margin-top: 8vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-section ul li a {
+    text-decoration: none; 
+    color: inherit; 
+    position: relative; 
+}
+
+.footer-section ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    border-bottom: 2px dotted currentColor;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out; 
+}
+
+.footer-section ul li a:hover::after {
+    opacity: 1;
+    
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    color: #292a49;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+.footer-social {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3);
+    margin: 16px auto;
+    text-align: center;
+    width: 90%; 
+    border: 1px solid #000000;
+}
+.footer-social .social-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-social .social-header h3 {
+    font-size: 24px;
+    color: #292a49;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    margin: 20px 0; 
+}
+
+.footer-social .social-icons a img {
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.footer-social .social-icons a:hover img {
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+.footer-social .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15%; 
+    margin-top: 10px;
+}
+
+.footer-social .Contact,
+.footer-social .Validation {
+    padding: 10px 20px;
+    background-color: #323790;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    font-size: 17px;
+    width: 330px;
+    flex: none; 
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #999;
+    padding: 10px 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.footer-bottom .left,
+.footer-bottom .right {
+    flex: 1;
+}
+
+.footer-bottom .right {
+    text-align: right;
+}
+
+.footer-bottom a {
+    color: #2a2e77;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animation styles  */
+
+@keyframes slideDownFadeIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+/* Media Query for tablets and mobile devices */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        animation: slideDown 0.5s ease-in-out; 
+    }
+
+    header nav.open {
+        display: flex;
+    }
+
+    header nav a {
+        margin: 5px 0;
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        background-color: #2a2e77;
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+
+    header .auth-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    header .auth-buttons a.auth-btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+        border-radius: 0;
+    }
+
+    header .auth-buttons a.auth-btn:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-social .social-icons {
+        gap: 10px; 
+    }
+
+    .footer-social .social-icons a img {
+        width: 28px; 
+        height: 28px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom .left,
+    .footer-bottom .right {
+        flex: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom .right {
+        margin-top: 5px;
+    }
+}
+
+/* Media Query for smaller mobile devices */
+@media (max-width: 480px) {
+    footer .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social .Contact, 
+    .footer-social .Validation {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-social .social-icons {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer-social .social-icons {
+        flex-direction: row; 
+        justify-content: space-between;
+        width: 100%; 
+    }
+
+    .footer-social .social-icons a img {
+        width: 24px; 
+        height: 24px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+        padding: 5px 0;
+    }
+
+    .footer-bottom .right {
+        margin-top: 3px;
+    }
+}
